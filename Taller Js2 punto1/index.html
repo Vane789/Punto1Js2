@@ -1,0 +1,25 @@
+<!--Anlly Vanessa Cardona-->
+ <!DOCTYPE html>
+ <html>
+    <head>
+	<title>Suma de dos numeros</title>
+	</head>
+	  <body>
+	  <h1> Suma </h1>
+	  <form action="../../form-result.php" method="post" target="_blank">
+	  <input type="number"  id="numero" placeholder="Digita el primer numero">
+	  <input type="number"  id="numero2" placeholder="Digita el segundo numero">
+	  <input type="button" id="boton" value="Sumar" onclick="Sumar()">
+	  <p id="Sumando"></p>
+	  </form>
+	 
+	     <script>
+		    function Sumar(){
+		    let n1 = document.getElementById('numero').value;
+            let n2 = document.getElementById('numero2').value;
+            let suma= parseInt(n1) + parseInt(n2);
+            document.getElementById("Sumando").innerHTML= suma;
+			}
+		 </script>
+	  </body>
+ </html>
